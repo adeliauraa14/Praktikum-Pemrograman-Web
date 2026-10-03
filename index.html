@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Data Mahasiswa</title>
+</head>
+<body id="top">
+    <header>
+        <h1>Sistem Informasi Data Mahasiswa -Praktikum 1 - Kelas PPW A</h1>
+        <p>Website sederhana untuk menampilkan informasi dan data mahasiswa Program Studi Teknik Informatika</p>
+        <img
+            src="foto.jpeg"
+            alt="Logo unila"
+            width="200"
+            height="200"
+            >
+        
+            <hr>
+    </header>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#informasi">Informasi Aplikasi</a>
+                    </li>
+
+                    <li>
+                        <a href="#daftar-mahasiswa">Daftar Mahasiswa</a>
+                    </li>
+
+                    <li>
+                        <a href="#from-tambah">Tambah Mahasiswa Baru</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <hr>
+
+            <main>
+                <section id="informasi">
+                    <h2>Informasi Sistem</h2>
+                    <p>Sistem informasi Data Mahasiswa merupakan halaman yang digunakan untuk menyajika informasi mengenai data mahasiswa secara terstruktur</p>
+
+                    <article>
+                        <h3>Tentang Sistem</h3>
+                        <p>Sistem ini menyediakan informasi data mahasiswa, daftar mahasiswa aktif, serta formulir untuk menambahkan data mahasiswa baru</p>
+                    </article>
+                </section>
+
+                <hr>
+
+                <section id="daftar-mahasiswa">
+                    <h2>Daftar Mahasiswa Aktif</h2>
+                    <p>Berikut adalah daftar mahasiswa yang terdaftar sebagai mahasiswa aktif</p>
+
+                    <table border="1" cellpadding="8" cellspacing="0"
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Foto</th>
+                            <th>NPM</th>
+                            <th>Nama Lengkap</th>
+                            <th>Program Studi</th>
+                            <th>Angkatan</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img
+                                    src="foto.jpeg"
+                                    alt="foto"
+                                    width="80"
+                                    height="80"
+                                    >
+                            </td>
+                            <td>2415061035</td>
+                            <td>Adelia Aura Nabilla</td>
+                            <td>Teknik Informatika</td>
+                            <td>2024</td>
+                            <td>adelia@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <img
+                                    src="foto.jpeg"
+                                    alt="foto"
+                                    width="80"
+                                    height="80"
+                                    >
+                            </td>
+                            <td>2415061044</td>
+                            <td>Zahra Dini</td>
+                            <td>Teknik Informatika</td>
+                            <td>2024</td>
+                            <td>zahradini@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <img
+                                    src="foto.jpeg"
+                                    alt="foto"
+                                    width="80"
+                                    height="80"
+                                    >
+                            </td>
+                            <td>2415061077</td>
+                            <td>Citra Ayu</td>
+                            <td>Teknik Informatika</td>
+                            <td>2024</td>
+                            <td>citraayu@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </section>
+
+                <hr>
+
+                <section id="form-tambah">
+                    <h2>Tambah Mahasiswa Baru</h2>
+                    <p>Silahkan isi formulir berikut untuk menambahkan data mahasiswa baru</p>
+
+                    <form action="#" method="post"
+
+                    <fieldset>
+                        <legend>Tambah Mahasiswa</legend>
+
+                        <p>
+                            <label for="npm">
+                                Nomor Pokok Mahasiswa (NPM):
+                            </label>
+                            <br>
+                            <input
+                            type="text"
+                            id="npm"
+                            name="npm"
+                            placeholder="contoh : 2415061035"
+                            required
+                            pattern="[0-9]{8-12}"
+                            title="NPM harus berupa angka 8-12 digit"
+                            >
+                            <br>
+                            <small>NPM harus sesuai</small>
+                        </p>
+
+                        <p>
+                            <label for="nama">
+                                Nama Lengkap:
+                            </label>
+                            <br>
+                            <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Contoh: Adelia Aura Nabilla"
+                            required
+                            minlength="3"
+                            maxlength="100"
+                            >
+                            <br>
+                            <small>Isi nama Lengkap</small>
+                        </p>
+
+                        <p>
+                            <label for="program_studi">
+                                Program Studi:
+                            </label>
+                            <br>
+                            <select>
+                            id="program_studi"
+                            name="program_studi"
+                            >
+                            required
+                        
+                            <option value="">
+                                pilih program studi
+                            </option>
+
+                            <option value=""Teknik Informatika>
+                                Teknik Informatika
+                            </option>
+                            </select>
+                            <br>
+                            <small>silahkan pilih</small>
+                        </p>
+
+                        <p>
+                        <label for="angkatan">
+                                Tahun Angkatan:
+                            </label>
+                            <br>
+                            <input
+                            type="number"
+                            id="angkatan"
+                            name="angkatan"
+                            placeholder="Contoh:2024"
+                            required
+                            min="2018"
+                            max="2026"
+                            >
+                            <br>
+                            <small>Isi angkatan</small>
+
+
+                        </p>
+
+                        <p>
+                            <label for="email">
+                                Alamat email:
+                            </label>
+                            <br>
+                            <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Contoh: email@gmail.com"
+                            required
+                            >
+                            <br>
+                            <small>Isi email</small>
+
+                        </p>
+
+                        <p>
+
+                            <button type="submit">
+                                Simpan Data Mahasiswa
+                            </button>
+                            <button type="reset">
+                                Reset Formulir
+                            </button>
+                        </p>
+
+                    </fieldset>
+
+
+
+                </section>
+
+
+        
+
+
+
+
+    </main>
+</body>
+</html>
